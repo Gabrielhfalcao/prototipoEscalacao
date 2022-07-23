@@ -224,11 +224,12 @@ body{
 }
 
 @media (max-width: 475px) {
+    .campoFutebol{
+        top: 55px;
+    }
+
     .circuloCentral{
-        width: 35%;
-        left: 33%;
-        height: 20%;
-        bottom: 99%;
+        display: none;
     }
     
     .jogador{
