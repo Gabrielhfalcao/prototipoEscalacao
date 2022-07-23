@@ -1,0 +1,291 @@
+body{
+    margin: 0px;
+    background-color: rgb(58, 58, 58);
+}
+
+.cabecalho{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: rgb(46, 46, 68);
+    box-shadow: 0px 0px 0px 0px black;
+    text-align: center;
+}
+
+.campoFutebol{
+    width: 70%;
+    height: 92%;
+    line-height: 70px;
+    background-color: rgba(1, 117, 16, 0.8);
+    background: repeating-linear-gradient(
+  180deg,
+  rgba(1, 117, 16, 0.8) 20px,
+  rgba(2, 131, 19, 0.8) 10px,
+  rgba(1, 117, 16, 0.8) 20px,
+  rgba(0, 78, 10, 0.8) 20px
+),url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png);
+    position: absolute;
+    top: 0;
+    left: 15%;
+    z-index: -1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0px 30px 30px 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 100px 0px rgb(26, 26, 26);
+}
+
+.linhasLaterais{
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    position: relative; 
+    padding-top: 66px;
+}
+
+.espacoTime{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.circuloCentral{
+    width: 33%;
+    height: 50%;
+    border-radius: 200px;
+    border: 5px solid white;
+    position: absolute;
+    bottom: 80%;
+    left: 34%;
+}
+
+.linhaGrandeArea{
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    height: 20%;
+    border: 5px solid white;
+    border-bottom: 0px solid white;
+}
+
+.semicirculo{
+    position: absolute;
+    bottom: 20%;
+    left: 42.5%;
+    width: 15%;
+    height: 10%;
+    border: 5px solid white;
+    border-bottom: 0px solid white;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+
+.espacoJogador{
+    margin-top: 5px;
+    width: 100%;
+    height: 100px;
+
+}
+
+.jogador{
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    border: 2px solid white;
+    background: linear-gradient(180deg, black, white);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#jogador1{
+    width: 100px;
+    position: absolute; 
+    right: -15px;
+}
+
+#jogador2{
+    width: 100px;
+    position: absolute; 
+    right: -15px;
+}
+
+#jogador3{
+    width: 100px;
+    position: absolute; 
+    right: -17px;
+}
+
+#jogador4{
+    width: 80px;
+    position: absolute; 
+    right: -4px;
+}
+
+#jogador5{
+    width: 95px;
+    position: absolute; 
+    right: -12px;
+}
+
+#jogador6{
+    width: 100px;
+    position: absolute; 
+    right: -16px;
+}
+
+#jogador7{
+    width: 100px;
+    position: absolute; 
+    right: -16px;
+}
+
+#jogador8{
+    width: 105px;
+    position: absolute; 
+    right: -17px;
+}
+
+#jogador9{
+    width: 100px;
+    position: absolute; 
+    right: -16px;
+}
+
+#jogador10{
+    width: 80px;
+    position: absolute; 
+    right: -7px;
+}
+
+#jogador11{
+    width: 100px;
+    position: absolute; 
+    right: -16px; 
+    top: 5px;
+}
+
+.btnMenuLateral{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    background-color: rgb(46, 46, 68);
+    position: absolute;
+    top: 0;
+    transition: .5s;
+}
+
+.btnMenuLateral:hover{
+    background-color: rgb(36, 36, 54);
+    transition: .5s;
+}
+
+.menuLateral{
+    width: 260px;
+    height: 100vh ;
+    background-color: rgb(36, 36, 54);
+    position: absolute;
+    top: 0;
+    left: -260px;
+    z-index: -1;
+    transition: .5s;
+}
+
+.fecharMenuLateral{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    display: none;
+    z-index: 1;
+    transition: .5s;
+}
+
+.fecharMenuLateral:hover{
+    background-color: rgb(36, 36, 54);
+}
+
+.iconeTime{
+    text-align: center;
+}
+
+@media (max-width: 712px) {
+    .campoFutebol{
+        width: 100%;
+        left: 0;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+@media (max-width: 475px) {
+    .circuloCentral{
+        width: 35%;
+        left: 33%;
+        height: 20%;
+        bottom: 99%;
+    }
+    
+    .jogador{
+        height: 50px;
+        width: 50px;
+    }
+
+    #jogador1{
+        width: 80px;
+    }
+
+    #jogador2{
+        width: 80px;
+        left: -18px;
+    }
+
+    #jogador3{
+        width: 80px;
+        top: 2px;
+    }
+
+    #jogador4{
+        width: 60px;
+        top: 2px;
+        left: -9px;
+    }
+    
+    #jogador5{
+        width: 80px;
+        top: 2px;
+        left: -19px;
+    }
+
+    #jogador6{
+        width: 80px;
+    }
+
+    #jogador7{
+        width: 80px;
+        left: -17px;
+    }
+
+    #jogador8{
+        width: 80px;
+        left: -18px;
+    }
+
+    #jogador9{
+        width: 80px;
+    }
+
+    #jogador10{
+        width: 65px;
+        left: -9px;
+    }
+
+    #jogador11{
+        width: 80px;
+    }
+}
